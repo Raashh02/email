@@ -42,7 +42,7 @@ _, data = imap.search(None, *search_query)
 email_ids = data[0].split()
 
 if not email_ids:
-    print("❌ No emails found with your filters.")
+    print(" No emails found with your filters.")
     imap.logout()
 else:
     print(f"\n Found {len(email_ids)} emails. Processing up to 20 latest...\n")
