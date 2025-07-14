@@ -76,10 +76,10 @@ else:
     print(f" Embedding shape: {vectors.shape}")
     index = faiss.IndexFlatL2(vectors.shape[1])
     index.add(vectors)
-    query = input("🔎 Enter your search query: ").strip()
+    query = input(" Enter your search query: ").strip()
     query_vec = model.encode([query], convert_to_numpy=True)
     _, top_indices = index.search(query_vec, k=5)
-    print(f"\n🔍 Top 5 matches for: '{query}'\n" + "="*60)
+    print(f"\n Top 5 matches for: '{query}'\n" + "="*60)
     for i in top_indices[0]:
         mail = emails[i]
         print(f"\n Subject: {mail['subject']}")
