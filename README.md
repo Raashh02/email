@@ -19,7 +19,7 @@ A Python-based CLI tool to interact with your IMAP email inbox. Supports:
 
 ##  Installation
 
-### 1️ Clone the repository
+1).Clone the repository
 
 
 2) After this
@@ -29,3 +29,4 @@ pip install -r req.txt
 ```bash
 
 cd python-cli-email
+pip install -r req.txt
